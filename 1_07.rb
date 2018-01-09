@@ -17,3 +17,7 @@ p double_numbers
 numbers = [1,2,4,2]
 numbers.map!{|num| num*2}
 p numbers
+
+#two line solution
+numbers = [1, 2, 4, 2]
+puts numbers.map { |num| num*2}
