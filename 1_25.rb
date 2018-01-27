@@ -5,3 +5,6 @@
 #   sum += number
 # end
 # p sum
+
+numbers = [1, 2, 4, 2]
+puts numbers.reduce(:+)
