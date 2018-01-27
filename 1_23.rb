@@ -4,12 +4,12 @@
 # p palindrome?("wazzzzup")  #=> false
 
 #with reverse method
-# def palindrome?(str)
-#   str.reverse == str
-# end
+def palindrome?(str)
+  str.reverse == str
+end
 
-# p palindrome?("racecar")
-# p palindrome?("waazuup")
+p palindrome?("racecar")
+p palindrome?("waazuup")
 
 #loop method
 
