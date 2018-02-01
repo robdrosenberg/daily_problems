@@ -12,9 +12,9 @@ def scrabble_score(str)
     'q'=> 10, 'r'=> 1, 's'=> 1, 't'=> 1, 
     'u'=> 1, 'v'=> 4, 'w'=> 4, 'x'=> 8, 
     'y'=> 4, 'z'=> 10}
-  total_points = 0
-  str.each_char{|char| total_points += points["#{char}"]}
-  total_points
+  add_points = []
+  total_points = str.each_char{|char| add_points << points["#{char}"]}
+  add_points.reduce(:+)
 end
 
 
